@@ -39,7 +39,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <Box as="nav" className="fixed top-0 left-0 w-full bg-white bg-opacity-30 backdrop-blur-md shadow-md z-10">
+    <Box as="nav" className="fixed top-0 left-0 w-full bg-opacity-30 backdrop-blur-md shadow-md z-10 bg-[#8B779A]">
       <Flex
         className="container mx-auto px-4 py-4"
         justifyContent="space-between"

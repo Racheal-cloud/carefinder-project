@@ -9,16 +9,16 @@ const MDEditor = dynamic(() => import("@uiw/react-md-editor"), { ssr: false });
 const MarkdownEditor: React.FC = () => {
   const [value, setValue] = useState("**Write your content here...**");
 
-  const handleEditorChange = (value: string) => {
-    setValue(value);
-  };
+//   const handleEditorChange = (value: string) => {
+//     setValue(value);
+//   };
 
   return (
     <Box className="container mx-auto p-4">
       <MDEditor
         value={value}
-        onChange={handleEditorChange}
-        preview={undefined} // Customize preview options if needed
+        onChange={setValue}
+        previewOptions={{ disabled: false }} // Customize preview options if needed
       />
     </Box>
   );
