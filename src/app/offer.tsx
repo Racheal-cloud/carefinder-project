@@ -2,9 +2,9 @@ import { Box, Text, SimpleGrid, VStack } from "@chakra-ui/react";
 
 export default function HowItWorks() {
   return (
-    <Box w="100%" className="bg-purple-300" py={10} px={4}>
+    <Box w="100%" className="bg-blue-300" py={10} px={4}>
       <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={6}>
-        How It Works
+        Our Offers
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
         {sections.map((section, index) => (

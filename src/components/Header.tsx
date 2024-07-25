@@ -46,12 +46,14 @@ const Header: React.FC = () => {
         alignItems="center"
       >
         {/* Logo */}
-        <Text className="">
+        <Text className="mx-4">
           <Image
             src="/images/carefinderlogo.svg"
             alt="Carefinder logo"
-            width={75}
-            height={100}
+            width={150}
+            height={200}
+            onClick={() => router.push("/")}
+
           />
         </Text>
 

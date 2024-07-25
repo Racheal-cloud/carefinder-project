@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import How from "@/app/how";
+import How from "@/app/offer";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +38,7 @@ export default function Home() {
           textAlign={{ base: "center", md: "left" }}
         >
           <Text fontSize="2xl" fontWeight="bold">
-            Welcome to Carefinder
+            Welcome to CareFinder
           </Text>
           <Text fontSize="lg" color="gray.600">
             Discover healthcare facilities and book appointments with ease. Your
@@ -47,8 +47,8 @@ export default function Home() {
           </Text>
           <Link href="/getstarted">
             {" "}
-            <Button colorScheme="purple" size="lg" className="mt-4">
-              Get Started
+            <Button colorScheme="blue" size="lg" className="mt-4">
+              Click More
             </Button>
           </Link>
         </VStack>

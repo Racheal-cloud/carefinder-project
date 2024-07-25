@@ -14,7 +14,12 @@ const firebaseConfig = {
     // storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
     // messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
     // appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-
+    apiKey: "AIzaSyDSYpvnoZuBbgcrrtsLkc7F0n9jTfRhUL4",
+    authDomain: "carefinder-project-4defd.firebaseapp.com",
+    projectId: "carefinder-project-4defd",
+    storageBucket: "carefinder-project-4defd.appspot.com",
+    messagingSenderId: "531064146383",
+    appId: "1:531064146383:web:4e27d02ba31f761b33aaba"
         
       };
       

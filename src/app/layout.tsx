@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./globals.css";
 import Header from "@/components/Header";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import { AuthProvider } from "./authContext";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
         <ChakraProvider>
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
           </ChakraProvider>
           </AuthProvider>
       </body>
