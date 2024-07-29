@@ -82,7 +82,7 @@ const Header: React.FC = () => {
             <Link href="/about" className="hover:underline hover:text-blue-500">About</Link>
           </Box>
           <Box as="li" mx={3}>
-            <Link href="/contact" className="hover:underline hover:text-blue-500">Contact Us</Link>
+            <Link href="/contact" className="hover:underline hover:text-blue-500">Contact</Link>
           </Box>
           <Box as="li" mx={3}>
             <Link href="/admin" className="border-2 p-1 hover:bg-black hover:text-white">Dashboard</Link>
@@ -125,16 +125,16 @@ const Header: React.FC = () => {
         <Box pb={4} display={{ md: "none" }}>
           <Flex as="ul" listStyleType="none" flexDirection="column" alignItems="center">
             <Box as="li" m={3}>
-              <Link href="/" className="hover:underline hover:text-purple-600" onClick={onToggle}>Home</Link>
+              <Link href="/" className="hover:underline hover:text-blue-500" onClick={onToggle}>Home</Link>
             </Box>
             <Box as="li" m={3}>
-              <Link href="/about" className="hover:underline hover:text-purple-600" onClick={onToggle}>About</Link>
+              <Link href="/about" className="hover:underline hover:text-blue-500" onClick={onToggle}>About</Link>
             </Box>
             <Box as="li" m={3}>
-              <Link href="/contact" className="hover:underline hover:text-purple-600" onClick={onToggle}>Contact Us</Link>
+              <Link href="/contact" className="hover:underline hover:text-blue-500" onClick={onToggle}>Contact</Link>
             </Box>
             <Box as="li" m={3}>
-              <Link href="/admin" className="border-2 p-1 hover:bg-black hover:text-white" onClick={onToggle}>Admin Login</Link>
+              <Link href="/admin" className="border-2 p-1 hover:bg-black hover:text-white" onClick={onToggle}>Dashboard</Link>
             </Box>
             <Box>
               {user ? (

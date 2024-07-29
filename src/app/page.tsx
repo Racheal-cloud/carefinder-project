@@ -6,9 +6,9 @@ import How from "@/app/offer";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Testimonial from "@/app/testimonial";
+import Testimonial from "@/app/review";
 import Newsletter from "@/app/newsletter";
-import Hero from "@/app/hero";
+import FrontView from "@/app/frontview";
 import { Text, Button, Box, VStack, Flex, Heading } from "@chakra-ui/react";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center space-y-12">
-      <Hero />
+      <FrontView />
 
       <Flex
         w="full"
@@ -29,7 +29,6 @@ export default function Home() {
         data-aos="fade-up"
         px={6}
         direction={{ base: "column", md: "row" }}
-      
       >
         <VStack
           align="start"
@@ -37,17 +36,18 @@ export default function Home() {
           maxW="lg"
           textAlign={{ base: "center", md: "left" }}
         >
-          <Text fontSize="2xl" fontWeight="bold">
+          <Text fontSize="2xl" fontWeight="bold" textAlign="center" justifyContent="center" m="auto">
             Welcome to CareFinder
           </Text>
-          <Text fontSize="lg" color="gray.600">
-            Discover healthcare facilities and book appointments with ease. Your
+          <Text fontSize="lg" color="gray.600" textAlign="center" justifyContent="center">
+            We are here to guide you through the process of selecting the very
+            best healthcare facilities. Book appointments with ease as your
             health is our priority, and we&apos;re here to connect you to the
             best care available.
           </Text>
           <Link href="/getstarted">
             {" "}
-            <Button colorScheme="blue" size="lg" className="mt-4">
+            <Button colorScheme="blue" size="lg" textAlign="center" justifyContent="center" rounded="full" m="auto" >
               Click More
             </Button>
           </Link>
@@ -55,7 +55,7 @@ export default function Home() {
 
         <Box flexShrink={0} w="full" maxW="md" mt={{ base: 8, md: 0 }}>
           <Image
-            src="/Images/carefinder2.webp"
+            src="/images/home.jpg"
             alt="Healthcare"
             layout="responsive"
             width={800}
@@ -66,7 +66,7 @@ export default function Home() {
       </Flex>
       <How />
       <Testimonial />
-      <Heading>Why Carefinder?</Heading>
+      <Heading>Why CareFinder?</Heading>
       <Flex
         w="full"
         align="center"
@@ -74,7 +74,6 @@ export default function Home() {
         data-aos="fade-up"
         px={6}
         direction={{ base: "column", md: "row" }}
-        
       >
         <VStack
           align="start"
@@ -82,12 +81,12 @@ export default function Home() {
           maxW="lg"
           textAlign={{ base: "center", md: "left" }}
         >
-          <Text fontSize="lg" color="gray.600">
-            With the growing need for accessible healthcare information,
-            Carefinder was created to address the challenge of finding reliable
-            hospital information. Our platform aims to bridge the gap between
-            healthcare providers and patients by providing accurate and
-            up-to-date hospital data.
+          <Text fontSize="lg" color="gray.600" textAlign="center" justifyContent="center">
+            We specialise in working with customers and their families for
+            accessible healthcare information. Our Objective is to address the
+            challenge of finding reliable hospital information. With the aid of
+            our platform, we aim to bridge the gap between healthcare providers
+            and patients by providing accurate and up-to-date hospital data.
           </Text>
         </VStack>
 

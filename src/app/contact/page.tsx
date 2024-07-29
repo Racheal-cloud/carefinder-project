@@ -7,7 +7,7 @@ function Contact() {
       <Box className="flex flex-col md:flex-row items-center container mx-auto px-4 md:px-0">
         <Box className="w-full md:w-1/2" data-aos="fade-right">
           <Image
-            src="/images/CareContact.jpg"
+            src="/images/Consult.jpg"
             alt="Carefinder"
             width={500}
             height={600}

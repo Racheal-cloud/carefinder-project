@@ -8,26 +8,26 @@ import {
     Link,
     VStack,
   } from "@chakra-ui/react";
-  import Hero from "@/app/hero";
+  import FrontView from "@/app/frontview";
   import Image from "next/image";
   const About: React.FC = () => {
     return (
       <div>
-        <Hero />
+        <FrontView />
         <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-white">
           <Heading as="h1" size="2xl">
-            About Carefinder
+            About CareFinder
           </Heading>
   
           <Text fontSize="lg">
-            Carefinder is a comprehensive platform designed to help users find,
+            CareFinder is a comprehensive platform designed to help users find,
             export, and share information about hospitals within their region in
             Nigeria. Our mission is to make healthcare more accessible and
             transparent for everyone.
           </Text>
   
           <Heading as="h2" size="lg">
-            Purpose
+            Our Vision
           </Heading>
           <Text fontSize="lg">
             With the growing need for accessible healthcare information,
@@ -50,7 +50,7 @@ import {
           >
             <Box flexShrink={0} w="full" maxW="md" mt={{ base: 8, md: 0 }}>
               <Image
-                src="/Images/carefinder8.jpeg"
+                src="/images/CareAbout.jpg"
                 alt="Healthcare"
                 layout="responsive"
                 width={800}
@@ -96,16 +96,7 @@ import {
             reference, or want to share information with loved ones, Carefinder
             has you covered.
           </Text>
-  
-          <Heading as="h2" size="lg">
-            Technology
-          </Heading>
-          <Text fontSize="lg">
-            Carefinder is built using modern web technologies including Next.js,
-            TypeScript, Chakra UI, and Tailwind CSS. We also leverage Firebase for
-            authentication and data storage, ensuring a secure and seamless user
-            experience.
-          </Text>
+
   
           <Heading as="h2" size="lg">
             Future Plans
