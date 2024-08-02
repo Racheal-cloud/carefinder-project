@@ -101,7 +101,7 @@ const SignUp: React.FC = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button colorScheme="purple" onClick={handleSignUp} w="full">
+          <Button colorScheme="blue" onClick={handleSignUp} w="full">
             Sign Up
           </Button>
           <Text>or</Text>
