@@ -45,7 +45,7 @@ export default function Home() {
             health is our priority, and we&apos;re here to connect you to the
             best care available.
           </Text>
-          <Link href="/getstarted">
+          <Link href="/clickMore">
             {" "}
             <Button colorScheme="blue" size="lg" textAlign="center" justifyContent="center" rounded="full" m="auto" >
               Click More

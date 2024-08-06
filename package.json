@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "ts-node scripts/seedData.ts"
-  
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -19,13 +18,11 @@
     "@uiw/react-md-editor": "^4.0.4",
     "aos": "^2.3.4",
     "axios": "^1.7.3",
-    "cloudinary": "^2.4.0",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.4",
     "firebase-admin": "^12.2.0",
     "framer-motion": "^11.3.9",
     "next": "14.2.5",
-    "next-cloudinary": "^6.9.0",
     "pg": "^8.12.0",
     "react": "^18",
     "react-dom": "^18",
@@ -49,6 +46,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
-  
-    "types": "module"
+  "types": "module"
 }
