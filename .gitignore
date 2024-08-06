@@ -28,7 +28,7 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
-service-keys/
+
 
 # vercel
 .vercel
@@ -36,3 +36,4 @@ service-keys/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+service-keys
