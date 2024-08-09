@@ -20,9 +20,15 @@ export default function RootLayout({
       <body>
         <AuthProvider>
         <ChakraProvider>
+        <div className="flex flex-col justify-between min-h-[100vh]">
+          <div>
           <Header />
+          <div className="mt-[3%]">
           {children}
+          </div>
+          </div>
           <Footer />
+          </div>
           </ChakraProvider>
           </AuthProvider>
       </body>

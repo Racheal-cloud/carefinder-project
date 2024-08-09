@@ -87,7 +87,7 @@ const AdminMarkdownEditor: React.FC = () => {
         />
       </Box>
       <Button colorScheme="blue" onClick={handleSave}>
-        Save Content
+        Save
       </Button>
     </VStack>
   );

@@ -28,9 +28,9 @@ const AdminLogin = () => {
       const checkAdminRole = async () => {
         try {
           const userDoc = doc(db, "users", user.uid);
-          const docInfo = await getDoc(userDoc);
+          const docSnap = await getDoc(userDoc);
 
-          if (docInfo.exists() && docInfo.data()?.role === "admin") {
+          if (docSnap.exists() && docSnap.data()?.role === "admin") {
             router.push("/adminprofile");
           } else {
             auth.signOut();
@@ -86,7 +86,7 @@ const AdminLogin = () => {
           </Button>
           {loading && <Text color="gray.500">Loading...</Text>}
           {authError && <Text color="red.500">Error: {authError}</Text>}
-          <Button colorScheme="blue" onClick={() => router.push("/adminreg")}>
+          <Button colorScheme="blue" onClick={() => router.push("/adminReg")}>
             Become an Admin
           </Button>
         </VStack>

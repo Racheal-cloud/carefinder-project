@@ -28,13 +28,18 @@ export default function HowItWorks() {
 }
 
 const sections = [
+
+  {
+    title: "Sign Up",
+    description: "Create an account to unlock full features.",
+  },
+  {
+    title: "Click More",
+    description: "Quickly click more and start exploring.",
+  },
   {
     title: "Share",
     description: "Easily share hospital information with others.",
-  },
-  {
-    title: "Get Started",
-    description: "Quickly sign up and start exploring.",
   },
   {
     title: "Markdown Support",
@@ -48,8 +53,5 @@ const sections = [
     title: "Search",
     description: "Search for preferred hospital name/address within your location or select from a list of nearby hospitals.",
   },
-  {
-    title: "Sign Up",
-    description: "Create an account to unlock full features.",
-  },
+
 ];

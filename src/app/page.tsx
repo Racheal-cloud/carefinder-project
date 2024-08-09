@@ -45,12 +45,14 @@ export default function Home() {
             health is our priority, and we&apos;re here to connect you to the
             best care available.
           </Text>
+          <Box mx="auto">
           <Link href="/clickMore">
             {" "}
-            <Button colorScheme="blue" size="lg" textAlign="center" justifyContent="center" rounded="full" m="auto" >
+            <Button colorScheme="blue" size="lg" textAlign="center" justifyContent="center" rounded="full" mx="auto" >
               Click More
             </Button>
           </Link>
+          </Box>
         </VStack>
 
         <Box flexShrink={0} w="full" maxW="md" mt={{ base: 8, md: 0 }}>

@@ -31,7 +31,7 @@ export default function Newsletter() {
           <Text py={3} fontWeight="medium" textAlign="center" mb={4}>
             Subscribe to our newsletter to get updates on our latest news
           </Text>
-          <Flex justifyContent="center">
+          <Flex justifyContent="center" alignItems="center">
             <Input
               type="email"
               placeholder="Enter email"

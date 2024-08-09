@@ -19,7 +19,7 @@ const DashboardUser= () => {
   if (loading) {
     return (
       <Center height="100vh">
-        <Spinner size="xl" color="purple.500" />
+        <Spinner size="xl" color="blue.500" />
       </Center>
     );
   }
