@@ -42,7 +42,7 @@ const SignUp: React.FC = () => {
     }
   };
 
-  const handleGoogleSignUp = async () => {
+  const handleGoogleSignUp = async (): Promise<void> => {
     try {
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
@@ -65,7 +65,7 @@ const SignUp: React.FC = () => {
         <Box display={{ base: "none", lg: "block" }} flex="1">
           <Image
           data-aos="fade-right"
-            src="/Images/signin.png"
+            src="/images/signin.svg"
             alt="Sign Up"
             boxSize="full"
             objectFit="cover"
@@ -83,7 +83,7 @@ const SignUp: React.FC = () => {
           mx="auto"
           mt={{ base: 8, lg: 0 }}
         >
-          <Text fontSize="2xl" fontWeight="bold">Sign Up</Text>
+          <Text fontSize="2xl" fontWeight="bold">Create an account</Text>
           {error && <Text color="red.500">{error}</Text>}
           <Input
             placeholder="Username"
@@ -114,12 +114,12 @@ const SignUp: React.FC = () => {
             Sign Up with Google
           </Button>
           <Link href="/signin">
-            <Text color="purple.500" _hover={{ textDecoration: "underline" }}>
+            <Text color="blue.500" _hover={{ textDecoration: "underline" }}>
               Already have an account? Sign In
             </Text>
           </Link>
           <Link href="/">
-            <Text color="purple.500" _hover={{ textDecoration: "underline" }}>
+            <Text color="blue.500" _hover={{ textDecoration: "underline" }}>
               <b>Go back to home page</b>
             </Text>
           </Link>

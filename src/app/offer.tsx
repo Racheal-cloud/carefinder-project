@@ -1,6 +1,6 @@
 import { Box, Text, SimpleGrid, VStack } from "@chakra-ui/react";
 
-export default function HowItWorks() {
+export default function Offer() {
   return (
     <Box w="100%" className="bg-blue-300" py={10} px={4}>
       <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={6}>
@@ -39,19 +39,19 @@ const sections = [
   },
   {
     title: "Share",
-    description: "Easily share hospital information with others.",
+    description: "Easily share hospital information with friends and family.",
   },
   {
     title: "Markdown Support",
     description: "Use markdown to format your notes and documents.",
   },
   {
-    title: "Select",
-    description: "Choose from a variety of options tailored to you.",
+    title: "Export Information",
+    description: "Export hospital details for offline use or sharing with others.",
   },
   {
     title: "Search",
-    description: "Search for preferred hospital name/address within your location or select from a list of nearby hospitals.",
+    description: "Search for preferred hospital name, address or contact within your location.",
   },
 
 ];

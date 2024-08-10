@@ -20,11 +20,12 @@ const Footer: React.FC = () => {
           <Image
             src="/images/carefinderlogo.svg"
             alt="Carefinder logo"
-            width={100}
-            height={75}
+            width={150}
+            height={200}
+          
           />
-          <Text>Call: 8109384309</Text>
-          <Text>Mail: racfoconcept2001@gmail.com</Text>
+          {/* <Text>Call: 8109384309</Text>
+          <Text>Mail: racfoconcept2001@gmail.com</Text> */}
           <Text>Follow us on Social Media</Text>
           <Flex justify="space-between" width={{ base: 'full', md: '75%' }} my={6}>
             <Link href="" isExternal>
@@ -45,15 +46,12 @@ const Footer: React.FC = () => {
         <Flex justify="space-between" flex="2" direction={{ base: 'column', md: 'row', lg: 'row' }} flexWrap="wrap">
           <Stack spacing={2} className="font-medium" flex="1" minW={{ base: "full", md: "auto" }}>
             <Text fontWeight="bold">Information</Text>
-
             <Link href="#">Our Mission</Link>
             <Link href="#">Our Vision</Link>
-            <Link href="#">Our Terms</Link>
-            <Link href="#">Help</Link>
             <Link href="#">Sign up as an Admin</Link>
           </Stack>
           <Stack spacing={2} className="font-medium" mt={{ base: 6, md: 0 }} ml={{ base: 0, lg: 10 }} flex="1" minW={{ base: "full", md: "auto" }}>
-            <Text fontWeight="bold">Quick Links</Text>
+            <Text fontWeight="bold">Useful Links</Text>
             <Link href="/about">About</Link>
             <Link href="#">Contact Us</Link>
             <Link href="#">Book an Appointment</Link>
@@ -62,15 +60,15 @@ const Footer: React.FC = () => {
           <Stack spacing={2} className="font-medium" mt={{ base: 6, md: 0 }} ml={{ base: 0, lg: 10 }} flex="1" minW={{ base: "full", md: "auto" }}>
             <Text fontWeight="bold">Company</Text>
             <Link href="/about">About Us</Link>
-            <Link href="/getstarted">Get Started</Link>
+            <Link href="/clickMore">Click More</Link>
             <Link href="/contact">Contact Us</Link>
-            <Link href="/testimonial">Testimonials</Link>
+            <Link href="/review">Review</Link>
           </Stack>
         </Flex>
       </Flex>
       <Divider my={6} />
       <Box bg="blue.500" py={2}>
-        <Text textAlign="center" color="white">&copy; All rights reserved. Carefinder 2024</Text>
+        <Text textAlign="center" color="white">&copy; All rights reserved. CareFinder 2024</Text>
       </Box>
     </Box>
   );

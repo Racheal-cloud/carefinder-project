@@ -16,7 +16,7 @@ function Contact() {
         </Box>
         <Box className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8" data-aos="fade-left">
           <Heading as="h1" size="xl" className="text-3xl md:text-4xl font-bold mb-4">Contact Us</Heading>
-          <Text className="mb-6 text-sm md:text-base">Our team would love to hear from you</Text>
+          <Text className="mb-6 text-sm md:text-base">We would love to hear from you</Text>
           <form method="POST" action="" className="space-y-5 py-6">
             <Input 
               type="text" 

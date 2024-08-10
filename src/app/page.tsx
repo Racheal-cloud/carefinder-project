@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import How from "@/app/offer";
+import Offer from "@/app/offer";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -66,7 +66,7 @@ export default function Home() {
           />
         </Box>
       </Flex>
-      <How />
+      <Offer />
       <Testimonial />
       <Heading>Why CareFinder?</Heading>
       <Flex

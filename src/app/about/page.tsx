@@ -33,7 +33,7 @@ const About: React.FC = () => {
         </Heading>
         <Text fontSize="lg">
           With the growing need for accessible healthcare information,
-          Carefinder was created to address the challenge of finding reliable
+          CareFinder was created to address the challenge of finding reliable
           hospital information. Our platform aims to bridge the gap between
           healthcare providers and patients by providing accurate and up-to-date
           hospital data. At CareFinder, we believe that everyone deserves
@@ -45,7 +45,7 @@ const About: React.FC = () => {
         <Heading as="h2" size="lg" className="py-2">
           Features
         </Heading>
-        <Flex
+        {/* <Flex
           w="full"
           align="center"
           justify="center"
@@ -88,7 +88,7 @@ const About: React.FC = () => {
               </ListItem>
             </List>
           </VStack>
-        </Flex>
+        </Flex> */}
 
         <Heading as="h2" size="lg">
           User Benefits

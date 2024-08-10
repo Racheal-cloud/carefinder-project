@@ -21,7 +21,7 @@ const SignIn: React.FC = () => {
     const handleSignin = async () => {
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        router.push("/getstarted");
+        router.push("/clickMore");
       } catch (error: Error | any) {
         setError(error.message);
       }
@@ -40,13 +40,14 @@ const SignIn: React.FC = () => {
 
   return (
     <Box className="flex flex-col lg:flex-row min-h-screen items-center lg:items-start mt-8 lg:justify-center">
-      <Box className="hidden lg:block lg:w-1/2 p-4">
-        <Image src="/Images/signup-carefinder.avif" alt="Sign In" boxSize="full" objectFit="cover" />
+      <Box className="hidden lg:block lg:w-1/2 p-4 mt-20">
+        <Image src="/images/signin.svg" alt="Sign In" boxSize="full" objectFit="cover" />
       </Box>
       <VStack
         spacing={4}
         className="bg-white p-6 rounded shadow-md w-full max-w-md mx-auto lg:w-1/2 lg:mt-36 mt-8 md:mt-28"
       >
+        
         <Text className="text-2xl">Sign In</Text>
         {error && <Text color="red.500">{error.message}</Text>}
         <Input
@@ -60,21 +61,22 @@ const SignIn: React.FC = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button colorScheme="blue" onClick={handleSignin}>
+        <Button className="text-black bg-white w-full rounded-full" colorScheme="blue" onClick={handleSignin}>
           Sign In
         </Button>
         <Text>or</Text>
-        <Button className="text-black bg-white" onClick={handleGoogleSignIn}>
+        <Button className="text-black bg-white w-full rounded-full" onClick={handleGoogleSignIn}>
           <FcGoogle />
           <span className="px-2">Sign In with Google</span>
         </Button>
         <Link href="/signup" className="hover:underline">
-          Don&apos;t have an account? Sign Up
+          New to CareFinder? Sign Up
         </Link>
         <Link href="/">
           <b>Go back to home page</b>
         </Link>
       </VStack>
+
     </Box>
   );
 };
