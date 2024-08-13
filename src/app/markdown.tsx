@@ -41,7 +41,7 @@ const AdminMarkdownEditor: React.FC = () => {
   return (
     <VStack spacing={6} align="start" w="full" p={4}>
       <FormControl id="hospitalName" mb={4}>
-        <FormLabel>Hospital Name</FormLabel>
+        <FormLabel>Name</FormLabel>
         <Input
           placeholder="Hospital Name"
           size="lg"

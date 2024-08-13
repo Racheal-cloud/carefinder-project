@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to your renamed service account key file
-const serviceAccount = require(path.resolve(__dirname, '../service-keys/carefinder-project-serviceAccountKey.json'));
+const serviceAccount = require(path.resolve(__dirname, '../service-keys/new-servicekey.json'));
 
 // Initialize Firebase
 admin.initializeApp({

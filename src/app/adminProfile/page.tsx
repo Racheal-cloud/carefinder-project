@@ -33,7 +33,7 @@ const AdminDashboard = () => {
   if (loading) {
     return (
       <Center height="100vh">
-        <Spinner size="xl" color="purple.500" />
+        <Spinner size="xl" color="blue.500" />
       </Center>
     );
   }
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
           Admin Dashboard
         </Text>
         <Text fontSize="xl" mb={6}>
-          Welcome, Admin!
+          Welcome!
         </Text>
         <MarkDownEditor />
       </Box>

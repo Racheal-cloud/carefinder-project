@@ -1,6 +1,6 @@
 // adminSetup.js
 const admin = require('firebase-admin');
-const serviceAccount = require('../service-keys/carefinder-project-serviceAccountKey.json'); // Update this path
+const serviceAccount = require('../service-keys/new-servicekey.json'); // Update this path
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
