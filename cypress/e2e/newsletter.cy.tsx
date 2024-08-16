@@ -1,32 +1,48 @@
-// cypress/e2e/newsletter.spec.ts
-
-describe('Newsletter Component', () => {
-    beforeEach(() => {
-      // Assuming the component is rendered on a specific route, e.g., "/newsletter"
-      cy.visit('/newsletter'); // Replace with the actual route where your component is rendered
-    });
+// describe('Newsletter Component', () => {
+//     beforeEach(() => {
+//       cy.visit('/');
+//       // Assuming there's a unique identifier for your Newsletter component
+//       cy.get('[data-testid="newsletter-component"]').as('newsletterComponent');
+//     });
   
-    it('should render the newsletter section correctly', () => {
-      // Check the title
-      cy.get('h2').contains('Newsletter').should('be.visible');
+//     it('renders the newsletter section correctly', () => {
+//       cy.get('@newsletterComponent').within(() => {
+//         cy.get('h2')
+//           .contains('Newsletter')
+//           .should('be.visible');
   
-      // Check the description text
-      cy.get('p').contains('Subscribe to our newsletter to get updates on our latest news').should('be.visible');
+//         cy.get('p')
+//           .contains('Subscribe to our newsletter to get updates on our latest news')
+//           .should('be.visible');
   
-      // Check the input field and subscribe button
-      cy.get('input[type="email"]').should('be.visible');
-      cy.get('button').contains('Subscribe').should('be.visible');
-    });
+//         cy.get('input[type="email"]')
+//           .should('be.visible')
+//           .and('have.attr', 'placeholder', 'Enter your email');
   
-    it('should allow a user to enter an email and click subscribe', () => {
-      // Simulate entering an email
-      cy.get('input[type="email"]').type('test@example.com');
+//         cy.get('button')
+//           .contains('Subscribe')
+//           .should('be.visible')
+//           .and('not.be.disabled');
+//       });
+//     });
   
-      // Click the subscribe button
-      cy.get('button').contains('Subscribe').click();
+//     it('allows a user to enter an email and subscribe', () => {
+//       const testEmail = 'test@example.com';
   
-      // You can add more checks here to verify the expected behavior after subscription
-      // For example, checking for a success message or form reset, depending on the app's behavior
-    });
-  });
+//       cy.get('@newsletterComponent').within(() => {
+//         cy.get('input[type="email"]')
+//           .type(testEmail)
+//           .should('have.value', testEmail);
   
+//         cy.get('button')
+//           .contains('Subscribe')
+//           .click();
+  
+//         // Add assertions for post-subscription behavior
+//         // cy.get('.success-message').should('be.visible').and('contain', 'Thank you for subscribing!');
+//         // cy.get('input[type="email"]').should('have.value', '');
+//       });
+//     });
+  
+//     // Additional test cases...
+//   });

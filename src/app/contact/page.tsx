@@ -8,40 +8,31 @@ import {
   Input,
   Textarea,
   Button,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Container,
-  List,
-  ListItem,
+  // FormControl,
+  // FormLabel,
+  // FormErrorMessage,
+  // FormHelperText,
+  // Container,
+  // List,
+  // ListItem,
 } from "@chakra-ui/react";
-import { FiMapPin } from "react-icons/fi";
-import { FiPhone } from "react-icons/fi";
-import { MdOutlineMailOutline } from "react-icons/md";
+// import { FiMapPin } from "react-icons/fi";
+// import { FiPhone } from "react-icons/fi";
+// import { MdOutlineMailOutline } from "react-icons/md";
 
 function Contact() {
   return (
-    <Box id="contact">
-      {/* <Box
+    <Box as="section" id="contact">
+      <Box
         backgroundImage="url('/images/Consult.jpg')"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
-        // width="100vw" 
-        // height="100vh"
-        // className="container mx-auto px-4 md:px-0"
-      > */}
-      {/* <Box className="w-full md:w-1/2" data-aos="fade-right">
-          <Image
-            src="/images/Consult.jpg"
-            alt="Carefinder"
-            width={500}
-            height={600}
-            className="rounded-lg shadow-lg"
-          />
-        </Box> */}
-      {/* <Flex justify="center" bg="white" width="100%" maxWidth="500px">
+         width="100vw" 
+         height="100vh"
+        className="container mx-auto px-4 md:px-0"
+      >
+      <Flex justify="center" bg="white" width="100%" maxWidth="500px">
        <Box
           className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8"
           data-aos="fade-left"
@@ -54,8 +45,8 @@ function Contact() {
           >
             Contact Us
           </Heading>
-          <Text className="mb-6 text-sm md:text-base">
-            We would love to hear from you
+          <Text className="mb-4 text-sm md:text-base">
+          Feel free to reach out to us with any questions or inquiries
           </Text>
           <form method="POST" action="" className="space-y-5 py-6">
             <Input
@@ -76,7 +67,7 @@ function Contact() {
             />
             <Textarea
               name="message"
-              cols={30}
+              cols={20}
               rows={10}
               placeholder="Message"
               className="form-input"
@@ -95,16 +86,12 @@ function Contact() {
             </Flex>
           </form>
         </Box>
-       </Flex> */}
+       </Flex>
 
-      <Flex px="40px" mt="100px" gap="40px">
+      {/* <Flex px="40px" mt="100px" gap="40px">
         <Box
           flex="1"
-          //  backgroundImage="url('/images/Consult.jpg')"
-          //   backgroundPosition="center"
-          //   backgroundRepeat="no-repeat"
-          //   backgroundSize="cover"
-          // width="100vw"
+          
           py="20px"
         >
           <Heading as="h1" size="3xl" fontWeight="bold">
@@ -142,13 +129,6 @@ function Contact() {
         <Box flex="1">
           <Flex direction="column" width="100%" maxWidth="500px">
             <FormControl>
-              {/* <Heading
-                as="h1"
-                size="xl"
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Contact Us
-              </Heading> */}
               <FormLabel>Name</FormLabel>
               <Input type="text" placeholder="Name" mb="5px" />
               <FormLabel>Email Address</FormLabel>
@@ -176,8 +156,8 @@ function Contact() {
             </FormControl>
           </Flex>
         </Box>
-      </Flex>
-      {/* </Box> */}
+      </Flex> */}
+      </Box>
     </Box>
   );
 }
