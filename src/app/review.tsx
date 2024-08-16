@@ -1,19 +1,19 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Box, Divider, Text, VStack, Flex } from "@chakra-ui/react";
+import { Box, Divider, Text, Flex } from "@chakra-ui/react";
 
 const reviews = [
   {
-    name: "John Doe",
+    name: "Michael Johnson",
     review: "Carefinder has completely transformed the way I find healthcare facilities. It's fast, reliable, and incredibly user-friendly.",
   },
   {
-    name: "Jane Smith",
+    name: "Joan Raphael",
     review: "The Carefinder app is a lifesaver! I was able to quickly find a hospital near me and book an appointment with ease.",
   },
   {
-    name: "Michael Johnson",
+    name: "Maxwell Roselina",
     review: "As someone who travels frequently, Carefinder is essential. It helps me find trusted healthcare providers no matter where I am in Nigeria.",
   },
 ];

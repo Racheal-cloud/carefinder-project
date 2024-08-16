@@ -48,21 +48,21 @@ const Footer: React.FC = () => {
             <Text fontWeight="bold">Information</Text>
             <Link href="#">Our Mission</Link>
             <Link href="#">Our Vision</Link>
-            <Link href="#">Sign up as an Admin</Link>
+            <Link href="#">Admin</Link>
           </Stack>
           <Stack spacing={2} className="font-medium" mt={{ base: 6, md: 0 }} ml={{ base: 0, lg: 10 }} flex="1" minW={{ base: "full", md: "auto" }}>
             <Text fontWeight="bold">Useful Links</Text>
             <Link href="/about">About</Link>
             <Link href="#">Contact Us</Link>
-            <Link href="#">Book an Appointment</Link>
-            <Link href="#">Frequently Asked Questions</Link>
+            {/* <Link href="#">Book an Appointment</Link>
+            <Link href="#">Frequently Asked Questions</Link> */}
           </Stack>
           <Stack spacing={2} className="font-medium" mt={{ base: 6, md: 0 }} ml={{ base: 0, lg: 10 }} flex="1" minW={{ base: "full", md: "auto" }}>
             <Text fontWeight="bold">Company</Text>
             <Link href="/about">About Us</Link>
             <Link href="/clickMore">Click More</Link>
             <Link href="/contact">Contact Us</Link>
-            <Link href="/review">Review</Link>
+            <Link href="/review">Testimonial</Link>
           </Stack>
         </Flex>
       </Flex>

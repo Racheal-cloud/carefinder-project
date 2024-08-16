@@ -15,19 +15,19 @@ The CareFinder App is a web application that allows users to find hospitals near
 10. Export and Sharing
 11. Testing
 12. Deployment
-13. Conclusion
+13. Conclusion.
 
 ## 1. Introduction
 CareFinder is a search engine for hospitals, currently available exclusively in Nigeria. It aims to provide users with a convenient and efficient way to find hospitals within their region and access essential information about them. This repository contains the source code for Carefinder, along with documentation on how to set it up and contribute to its development.
 
 ## 2. Features
-Hospital Search: Users can search for hospitals within their region by location or selecting from a list of nearby cities. The platform provides a list of hospitals with contact details such as address, phone number, and email.
+Hospital Search: Users can search for hospitals within their region by location or selecting from a list of nearby cities. The platform provides a list of hospitals with contact details such as address, and phone number.
 
 Export Hospitals: Users can export the list of hospitals to a CSV file for easy storage and sharing of information.
 
 Share Hospitals: The platform allows users to share the list of hospitals via email or by generating a shareable link.
 
-User Authentication: CareFinder utilizes NextAuth library for user authentication. It provides a secure login system, allowing admin users to create an account and access the admin features of CareFinder.
+User Authentication: CareFinder utilizes Firestore library for user authentication. It provides a secure login system, allowing admin users to create an account and access the admin features of CareFinder.
 
 ## 3. Prerequisites
 Before getting started with the Hospital Finder App, ensure that you have the following prerequisites:
@@ -35,7 +35,7 @@ Before getting started with the Hospital Finder App, ensure that you have the fo
 - A Firebase project with Firebase Authentication and Firebase Firestore enabled.
 
 ## 4. Technology used
-Frontend: React, TypeScript Backend: Firebase, MongoDB (for database, and file storage), NextAuth Library(Authentication) Additional Tools: Prettier, ESLint, Jest, React Testing Library
+Frontend: React, TypeScript Backend: Firebase, (for database, authentication, and file storage). Additional Tools: Prettier, ESLint, Cypress, React Testing Library
 
 
 ## 5. Installation
@@ -46,13 +46,10 @@ Install dependencies: npm install
 Set up the Firebase project:
 Create a new Firebase project on the Firebase Console.
 Set up Firebase Authentication and Firestore database.
-Obtain the Firebase configuration details.
-Set up MongoDB:
-Install MongoDB and set up a local or remote MongoDB database.
-Obtain the MongoDB connection details.
+Obtain the Firebase configuration details
 Configure the environment:
 Create a .env file based on the provided .env.example file.
-Fill in the required environment variables, including Firebase and MongoDB configuration details.
+Fill in the required environment variables, including Firebase configuration details.
 Start the development server: npm run dev
 BaseUrl : http://localhost:3000
 

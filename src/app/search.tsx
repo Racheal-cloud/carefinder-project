@@ -1,6 +1,6 @@
 
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import hospitalData from "@/data/data.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -29,6 +29,19 @@ const SearchComponent: React.FC = () => {
   const [hospitals, setHospitals] = useState<HospitalData[]>([]);
   const itemsPerPage = 9;
 
+  const fetchHospitalsFromFirebase = useCallback(async (): Promise<HospitalData[]> => {
+    const hospitalsCollection = collection(db, "hospitals");
+    const snapshot = await getDocs(hospitalsCollection);
+    return snapshot.docs.map(doc => {
+      const data = doc.data();
+      return {
+        "Hospital name": data.name || "",
+        address: data.address || "",
+        contact: data.contact || ""
+      } as HospitalData;
+    });
+  }, []);
+
   useEffect(() => {
     const loadHospitals = async () => {
       try {
@@ -41,7 +54,7 @@ const SearchComponent: React.FC = () => {
     };
 
     loadHospitals();
-  }, []);
+  }, [fetchHospitalsFromFirebase]);
 
   useEffect(() => {
     const searchHospitals = (query: string) => {
@@ -55,18 +68,6 @@ const SearchComponent: React.FC = () => {
     searchHospitals(query);
   }, [query, hospitals]);
 
-  const fetchHospitalsFromFirebase = async (): Promise<HospitalData[]> => {
-    const hospitalsCollection = collection(db, "hospitals");
-    const snapshot = await getDocs(hospitalsCollection);
-    return snapshot.docs.map(doc => {
-      const data = doc.data();
-      return {
-        "Hospital name": data.name || "",
-        address: data.address || "",
-        contact: data.contact || ""
-      } as HospitalData;
-    });
-  };
 
   const exportToCSV = () => {
     const fields = ['name', 'address', 'contact'];
