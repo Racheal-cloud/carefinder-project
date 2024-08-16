@@ -2,6 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Box, Divider, Text, Flex } from "@chakra-ui/react";
+import React from "react";
 
 const reviews = [
   {

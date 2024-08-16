@@ -4,6 +4,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { SiGithub } from "react-icons/si";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { Box, Text, Flex, Link, Stack, Divider } from "@chakra-ui/react";
+import React from "react";
 
 const Footer: React.FC = () => {
   return (

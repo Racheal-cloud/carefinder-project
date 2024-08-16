@@ -1,5 +1,5 @@
 // services/hospitalService.ts
-import { db } from '@/app/firebase'; // Adjust the import path as needed
+import { db } from '../app/firebase'; // Adjust the import path as needed
 import { collection, getDocs } from 'firebase/firestore';
 
 export interface Hospital {

@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom'; // For additional matchers like `toBeInTheDocument`
 import Offer from '../src/app/offer';
 import { describe, it, expect } from 'vitest';;
+import React from 'react';
 
 // d
 describe('Offer Component', () => {

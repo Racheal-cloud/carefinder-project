@@ -4,6 +4,7 @@ import '@testing-library/jest-dom'; // For additional matchers like `toBeInTheDo
 import FrontView from '../src/app/frontview';
 import { describe, it, expect } from 'vitest';
 import { parse } from 'url';
+import React from 'react';
 
 describe('FrontView Component', () => {
   it('should render the image with correct src and alt attributes', () => {

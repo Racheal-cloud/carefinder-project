@@ -1,10 +1,11 @@
 "use client";
+import React from "react";
 import {
   Heading,
   Text,
   Link,
 } from "@chakra-ui/react";
-import FrontView from "@/app/frontview";
+import FrontView from "../../app/frontview";
 
 const About: React.FC = () => {
   return (

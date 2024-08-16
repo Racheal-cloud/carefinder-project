@@ -1,14 +1,15 @@
 
 "use client";
 import { useState, useEffect, useCallback } from 'react';
-import hospitalData from "@/data/data.json";
+import hospitalData from "../data/data.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Box, Input, SimpleGrid, List, ListItem, Button, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/app/firebase";
+import { db } from "../app/firebase";
 import { Parser } from 'json2csv';
+import React from 'react';
 
 
 const SearchComponent: React.FC = () => {
