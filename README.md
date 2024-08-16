@@ -4,10 +4,10 @@ The CareFinder App is a web application that allows users to find hospitals near
 
 ## Table of Contents
 1. Introduction
-2. Prerequisites
-3. Installation
-4. Configuration
-5. Folder Structure
+2. Features
+3. Prerequisites
+4. Technology used
+5. installation
 6. Dependencies
 7. Firebase Setup
 8. Authentication
@@ -35,7 +35,7 @@ Before getting started with the Hospital Finder App, ensure that you have the fo
 - A Firebase project with Firebase Authentication and Firebase Firestore enabled.
 
 ## 4. Technology used
-Frontend: React, TypeScript Backend: Firebase, (for database, authentication, and file storage). Additional Tools: Prettier, ESLint, Cypress, React Testing Library
+Frontend: React, TypeScript Backend: Firebase, (for database, authentication, and file storage). Additional Tools: Prettier, ESLint, Cypress, Jest, React Testing Library
 
 
 ## 5. Installation
@@ -50,7 +50,7 @@ Obtain the Firebase configuration details
 Configure the environment:
 Create a .env file based on the provided .env.example file.
 Fill in the required environment variables, including Firebase configuration details.
-Start the development server: npm run dev
+Start the development server: pnpm run dev
 BaseUrl : http://localhost:3000
 
 ## 6. Dependencies
@@ -58,9 +58,6 @@ The Hospital Finder App relies on the following key dependencies:
 - React: A JavaScript library for building user interfaces.
 - React Router: For managing routing and navigation within the app.
 - Firebase: For authentication and Firestore database.
-- Axios: A library for making HTTP requests.
-- FileSaver: For saving files on the client-side.
-
 For a complete list of dependencies, refer to the `package.json` file.
 
 ## 7. Firebase Setup
@@ -83,8 +80,6 @@ The Hospital Data Management features allow users to perform the following actio
 - Create Hospital Entries: Admin users can create hospital entries with details such as name, address, phone number, etc. The entries are stored in the Firebase Firestore database.
 - Display Hospital Details: Users can view the details of each hospital, including the name, address, phone number, and other relevant information.
 
-The hospital data management code is implemented in the `HospitalSearch`, `HospitalDetails`, and `HospitalForm` components.
-
 ## 10. Export and Sharing
 The Export and Sharing feature allows users to export the hospital data and share it with others. It includes the following functionality:
 - Export to CSV: Users can export the hospital data in CSV format. The exported file contains the hospital details such as name, address, phone number, etc.
@@ -105,7 +100,7 @@ npm test
 To deploy the Hospital Finder App to a production environment, follow these steps:
 1. Build the production-ready app using the following command:
 ```
-npm run build
+pnpm run build
 ```
 2. The build files will be generated in the `build` directory.
 3. Deploy the generated build files to a web server or a hosting service of your choice.
