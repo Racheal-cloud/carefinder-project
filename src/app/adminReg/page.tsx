@@ -2,7 +2,7 @@
 
 import  React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/app/firebase";
+import { auth, db } from "../../app/firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
 import { Box, Button, Input, Text, VStack, Heading } from "@chakra-ui/react";

@@ -1,12 +1,12 @@
 "use client";
-
+import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "@/app/firebase";
+import { auth, db } from "../../app/firebase";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Box, Text, Spinner, Center, Container } from "@chakra-ui/react";
 import { doc, getDoc } from "firebase/firestore";
-import MarkDownEditor from "@/app/markdown";
+import MarkDownEditor from "../../app/markdown";
 
 const AdminDashboard = () => {
   const [user, loading, error] = useAuthState(auth);
