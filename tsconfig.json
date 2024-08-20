@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "types": ["cypress", "node", "jest", "@testing-library/jest-dom"],
+    "types": ["playwright", "node", "jest", "@testing-library/jest-dom"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -26,7 +26,7 @@
     },
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/**/*.ts", "src/app/clickMore", "cypress/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/**/*.ts", "src/app/clickMore"],
 
   "exclude": ["node_modules"]
 }
