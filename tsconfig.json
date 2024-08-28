@@ -9,14 +9,14 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "types": ["playwright", "node", "jest", "@testing-library/jest-dom"],
+    "types": ["node", "jest"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".", 
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types","./node_modules/@testing-library/types"],
     "plugins": [
       {
         "name": "next"
