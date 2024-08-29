@@ -1,7 +1,8 @@
 "use client";
+import React from 'react';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import hospitalData from '@/data/data.json';
+import hospitalData from '../../../data/data.json';
 import { Box, Text, VStack } from '@chakra-ui/react';
 import Aos from "aos";
 import "aos/dist/aos.css";

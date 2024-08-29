@@ -85,7 +85,7 @@ const SignIn: React.FC = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button className="text-black bg-white w-full rounded-full" colorScheme="blue" onClick={handleSignin}>
+        <Button data-testid="email-signin-button" className="text-black bg-white w-full rounded-full" colorScheme="blue" onClick={handleSignin}>
           Sign In
         </Button>
         <Button
@@ -96,7 +96,7 @@ const SignIn: React.FC = () => {
             Forgot Password?
           </Button>
         <Text>or</Text>
-        <Button className="text-black bg-white w-full rounded-full" onClick={handleGoogleSignIn}>
+        <Button data-testid="google-signin-button" className="text-black bg-white w-full rounded-full" onClick={handleGoogleSignIn}>
           <FcGoogle />
           <span className="px-2">Sign In with Google</span>
         </Button>

@@ -2,6 +2,7 @@
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../app/firebase";
 import { useState } from "react";
+import React from "react";
 import {
   Button,
   Box,

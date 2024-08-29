@@ -1,9 +1,9 @@
 "use client";
-
+import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
-import { auth, db } from "@/app/firebase";
+import { auth, db } from "../../app/firebase";
 import { useRouter } from "next/navigation";
 import { Box, Button, Input, Text, VStack, Heading } from "@chakra-ui/react";
 import { useState, useEffect } from "react";

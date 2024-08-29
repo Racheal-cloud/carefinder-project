@@ -9,17 +9,8 @@ import {
   Input,
   Textarea,
   Button,
-  // FormControl,
-  // FormLabel,
-  // FormErrorMessage,
-  // FormHelperText,
-  // Container,
-  // List,
-  // ListItem,
+  
 } from "@chakra-ui/react";
-// import { FiMapPin } from "react-icons/fi";
-// import { FiPhone } from "react-icons/fi";
-// import { MdOutlineMailOutline } from "react-icons/md";
 
 function Contact() {
   return (

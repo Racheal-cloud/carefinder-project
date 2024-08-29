@@ -1,5 +1,6 @@
 import { Text, Button, Heading, Container, Stack } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 
 const error404Page: React.FC = () => {
   return (
