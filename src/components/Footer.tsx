@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           <Text>Mail: racfoconcept2001@gmail.com</Text> */}
           <Text>Follow us on Social Media</Text>
           <Flex justify="space-between" width={{ base: 'full', md: '75%' }} my={6}>
-            <Link href="" isExternal>
+            <Link href="https://twitter.com/AjiboyeAbosede4" isExternal>
               <FaTwitter size="24" />
             </Link>
             <Link href="https://www.linkedin.com/in/abosede-omotoso-66285b115/" isExternal>
