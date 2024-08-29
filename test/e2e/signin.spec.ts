@@ -46,7 +46,6 @@ test.describe('Sign In page', () => {
     await page.goto('http://localhost:3000/signin');
 
     await page.getByRole('link', { name: 'Go back to home page' }).click();
-    // await expect(page).toHaveURL('http://localhost:3000/');
   });
 
   test('should show forgot password message', async ({ page }) => {
